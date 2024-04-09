@@ -19,11 +19,11 @@ let package = Package(
     targets: [
         
         .binaryTarget(name: "GT3Captcha",
-                      path: "./Sources/GT3Captcha.xcframework")
+                      path: "./Sources/GT3Captcha.xcframework"),
         
-//            .target(name: "GT3Captcha",
-//                    resources: [.copy("./Sources/PrivacyInfo.xcprivacy"),
-//                                .copy("./Sources/GT3Captcha.bundle")])
+        .target(name: "GT3Captcha",
+                resources: [.copy("./Sources/PrivacyInfo.xcprivacy"),
+                            .copy("./Sources/GT3Captcha.bundle")])
         
     ]
 )
